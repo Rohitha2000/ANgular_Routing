@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>  User Data </h2>
+    <form #factorial="ngForm" (ngSubmit)="onSubmit(factorial.value)">
+      <div class="form-group">
+        <label>Number: </label>
+        <input type="number" class="form-control" name="number1" ngModel>
+      </div><br>
+     
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h3>Factorial of {{num}} : {{factorialnum}}</h3>
+</div>
+
+<a routerLink= "user/6132">Rohitha</a>
+
+
+<router-outlet></router-outlet>
